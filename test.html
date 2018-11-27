@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ 
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			span {
+				display: block;
+				cursor: pointer;
+				margin-top: 20px;
+				width: 140px;
+				border: 1px solid #000000;
+			}
+		</style>
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?f0ef8fc72d73d80b3306f261b539a385";
+				var s = document.getElementsByTagName("script")[0]; 
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+
+
+	</head>
+ 
+	<body>
+		备注：页面标签无洞察属性
+		<span class="span7">tackevent</span>
+		<div style="width: 100px;height:20px;margin-top: 200px;margin-left: 200px;"></div>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		$(".span7").bind("click", function() {
+			$("div").text("点了tackevent");
+			_hmt.push(['_trackEvent', "测试", "click_span7"]);
+		});
+ 
+		setTimeout(function() {
+			$("ins").each(function() {
+ 
+				$(this).css("display", "none");
+			})
+		}, 1000);
+	</script>
+	<!--http://tongji.baidu.com/web/help/article?id=236&type=0-->
+ 
+</html>
