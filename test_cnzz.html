@@ -26,16 +26,23 @@
 		</script>
 	
 		备注：cnzz站长统计
-		<span class="span7">tackevent</span>
+		<span class="span1">tackevent</span>
+		<span class="span2">setAccount</span>
+		<span class="span3">setAutoPageview</span>
 		<div style="width: 100px;height:20px;margin-top: 200px;margin-left: 200px;"></div>
 	</body>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script>
-		$(".span7").bind("click", function() {
+		$(".span1").bind("click", function() {
 			$("div").text("点了tackevent");
-			_czc.push(['_setAccount', "1275482869");
-			_czc.push(['_trackEvent', "'0音乐测试*", "%播放-", "音乐", 100]);
-			_czc.push(['_setAccount', "1275482869");
+			_czc.push(['_trackEvent', "'0音乐测试*", "%播放-", "音乐", "/北京欢迎您\\"]);
+		});
+		$(".span2").bind("click", function() {
+			$("div").text("setAccount");
+			_czc.push(['_setAccount', "30193fea3a2c0b2b25a9e82fb7cc5aba");
+		});
+		$(".span3").bind("click", function() {
+			$("div").text("setAutoPageview");
 			_czc.push(['_setAutoPageview', true]);
 		});
  
